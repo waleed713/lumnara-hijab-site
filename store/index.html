@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>Lumnara — Modest Wear</title>
+    <meta
+      name="description"
+      content="Premium abayas, hijabs and modest wear for Pakistan and the Middle East."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Raleway:wght@300;500;700&family=Noto+Naskh+Arabic:wght@400;600&family=Noto+Nastaliq+Urdu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preload" as="image" href="images/hero-1.webp" />
+  </head>
+  <body>
+    <a class="skip" href="#app">Skip to content</a>
+    <div class="announce" id="announce"></div>
+    <header class="hdr" id="hdr">
+      <a href="#/" class="hdr__logo" aria-label="Lumnara"
+        ><span class="logo" dir="ltr"
+          ><img
+            src="images/logo.png"
+            alt="Lumnara"
+            width="1536"
+            height="1024" /></span
+      ></a>
+      <nav class="hdr__nav" id="nav" aria-label="Main"></nav>
+      <div class="hdr__tools">
+        <button class="ib" data-search aria-label="Search">
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+          >
+            <circle cx="11" cy="11" r="6.5" />
+            <path d="M16 16l5 5" />
+          </svg>
+        </button>
+        <select class="js-lang hide-s" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="ar">العربية</option>
+          <option value="ur">اردو</option>
+        </select>
+        <select class="js-cur hide-s" aria-label="Currency"></select>
+        <a href="#/cart" class="hdr__cart" aria-label="Bag"
+          >Bag <b id="cartCount">0</b></a
+        >
+        <button
+          class="ib burger"
+          data-menu
+          aria-label="Menu"
+          aria-expanded="false"
+          aria-controls="mnav"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <div class="sbar" id="sbar" hidden>
+      <div class="wrap">
+        <input
+          id="q"
+          type="search"
+          placeholder="Search abayas, hijabs, fabrics"
+          aria-label="Search"
+        />
+        <div id="sres"></div>
+      </div>
+    </div>
+    <nav class="mnav" id="mnav" aria-label="Mobile"></nav>
+    <main id="app" tabindex="-1"></main>
+    <footer class="ftr" id="ftr"></footer>
+    <a
+      class="wa"
+      id="wa"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+      ><svg
+        viewBox="0 0 24 24"
+        width="30"
+        height="30"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100-1.500-.7-2.500-1.300-3.400-2.900-.3-.4.300-.4.800-1.400.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.300-.7.700-1 1.500-1 2.300.1 1 .5 1.900 1.100 2.700 1.200 1.600 2.700 2.800 4.500 3.500 1.700.6 2.300.6 3.100.5.5-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"
+        /></svg
+    ></a>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="js/config.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/payments.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
